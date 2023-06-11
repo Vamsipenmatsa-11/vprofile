@@ -1,12 +1,12 @@
-pipeline{
+pipeline {
     agent any
-    tools{
+    tools {
         maven 'maven3'
     }
-    stages{
-        stage("build artifact"){
-            steps{
-                script{
+    stages {
+        stage("build artifact") {
+            steps {
+                script {
                    sh 'mvn clean package -DskipTestsS'
 
                 }
