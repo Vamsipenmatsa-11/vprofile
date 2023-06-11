@@ -4,8 +4,7 @@ pipeline{
         stage("build artifact"){
             steps{
                 script{
-
-                    sh 'mvn clean package -DskipTestsS'S
+                   sh 'mvn clean package -DskipTestsS'
 
                 }
             }
